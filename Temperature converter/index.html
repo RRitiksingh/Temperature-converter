@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="script.js" />
+    <title>Temperature Converter</title>
+  </head>
+  <body style="background-image: url(images/ffff.jpeg);">
+    <div class="header">
+    <div class="converter-container">
+      <h1 style="text-align: center; color: blue">Temperature Converter</h1>
+      <div style="text-align: center">
+        <label for="celsius">Celsius:</label>
+        <input
+          type="number"
+          id="celsius"
+          placeholder="Enter temperature"
+          oninput="convertTemperature()"
+        />
+      </div>
+      <div style="text-align: center; margin-top: 5px">
+        <label for="fahrenheit">Fahrenheit:</label>
+        <input
+          type="number"
+          id="fahrenheit"
+          placeholder="Converted temperature"
+          readonly
+        />
+      </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
